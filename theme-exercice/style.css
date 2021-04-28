@@ -1,0 +1,226 @@
+/*
+Theme name: Thème exercice développeur CEFii
+Author: Hélène Brie
+Description: Thème avec menu déroulant, slideshow, zone de widget à droite, googlemap et page de contact
+*/
+h1, h2, h3, h4, h5, a{
+    color: crimson;
+}
+#wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#slogan{
+    font-style: italic;
+}
+nav#menuTop{
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+}
+nav#menuTop ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+nav#menuTop ul li{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border-left: thin solid white;
+    padding: 0 0.5em;
+}
+nav#menuTop ul li:last-of-type{
+    border-right: thin solid white;
+}
+nav#menuTop ul li a {
+    background-color: crimson;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding : 0.5em
+}
+nav#menuTop ul li ul{
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+nav#menuTop ul li ul li:first-of-type{
+    margin-top: 1em;
+}
+nav#menuTop ul li ul li{
+    text-transform: capitalize;
+    display: block;
+    width: 150%;
+    text-align: center;
+    border-top: 0.3em solid transparent;
+    border-left: none;
+    border-right: none;
+}
+nav#menuTop ul li ul li:last-of-type{
+    border-right: none;
+}
+nav#menuTop ul li ul li a{
+    padding: 0.5em 0;
+}
+nav#menuTop ul li ul {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    left: 0;
+}
+nav#menuTop ul li:hover > ul{
+    display: block;
+}
+footer{
+    background-color: crimson;
+    padding: 0.5em;
+    color: white;
+}
+footer ul{
+    list-style-type: none;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+}
+footer a{
+    color: white;
+}
+#articles{
+    display: flex;
+    justify-content: space-between;
+}
+.article{
+    position: relative;
+    border: thin solid crimson;
+    margin-bottom: 2em;
+    max-width: 30%;
+    padding: 0 0 1em;
+    background-color: rgba(189, 61, 87, 0.123);
+
+}
+.article a{
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+}
+.article h1{
+    color: black;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+}
+.article h2 a{
+    position: static;
+}
+.article img{
+    border-radius: 50%;
+}
+#thumbnail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: white;
+    padding: 0.5em 0;
+}
+#texte{
+    padding: 0 0.5em 0.5em;
+}
+.quote{
+    display: flex;
+    align-items: baseline;
+}
+
+#blocs{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#block nav div{
+    width: 100%;
+    margin: 0;
+}
+#menuFooter{
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 0;
+    width: 25%;
+    padding: 0;
+}
+#menuFooter li{
+    text-align: left;
+}
+#menuFooter a{
+    color: crimson;
+    text-decoration: none;
+}
+#menuFooter ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5em;
+}
+#contactFooter{
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    width: 25%;
+    color: crimson;
+    background-color: white;
+    border-radius: 0.5em;
+}   
+#contactFooter h2{
+    margin-top: 0;
+}   
+#contactFooter p{
+    margin-top: 0;
+}
+#copyright{
+    text-align: center;
+}
+#reseaux{
+    text-align: center;
+    width: 25%;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+.clear{
+    clear: both;
+}
+#pages{
+    margin-bottom: 2em;
+}
+.avecWidgets{
+    float: left;
+    width: 70%;
+}
+#colonneDroite{
+    float: right;
+    border: thin solid crimson;
+    border-radius: 0.5em;
+    padding: 0 0.8em 1em;
+    width: 20%;
+    margin: 2em 0;
+}
+#colonneDroite ul{
+    list-style-type: none;
+}
+#colonneDroite a{
+    color: black;
+}
+#zoneInfo{
+    float: right;
+    width: 20%;
+}
+#map{
+    margin-bottom: 1em;
+}
